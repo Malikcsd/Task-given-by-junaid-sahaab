@@ -1,0 +1,40 @@
+<html>
+<body>
+
+<h2>Fee Record table</h2>
+
+<table style="width:100%">
+  <thead>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>semester</th>
+      <th>program</th>
+      <th>Session</th>
+      <th>total fee</th>
+      <th>Submitted Fee</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    {%for stud in students%}
+    <tr>
+      <td>{{stud.firstname}}</td>
+      <td>{{stud.lastname}}</td>
+      <td>{{stud.semester}}</td>
+      <td>{{stud.program}}</td>
+      <td>{{stud.session}}</td>
+      <td>{{stud.lastname}}</td>
+      <td>{{stud.session}}</td>
+      <td>{{stud.submittedfee}}</td>
+      <td>{{stud.duefee}}</td>
+      <td>{{stud.totalfee}}</td>
+      <!-- <td><a href="/update/{{stud.id}}">update</a>, <a href="/delete/{{stud.id}}">delete</a></td> -->
+    </tr>
+    {%endfor%}
+  </tbody>
+
+</body>
+      <td>{{stud.totalfee}}</td>
+      <td>{{stud.submittedfee}}</td>
+</html>
